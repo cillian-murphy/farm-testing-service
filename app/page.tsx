@@ -1,12 +1,13 @@
 import Banner from "./Components/Banner";
+import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <section className="-mt-8 sm:-mt-10 mb-8 sm:mb-10">
+      <section className="-mt-8 sm:-mt-10 mb-8 sm:mb-10 -mx-4 sm:-mx-6">
         <Banner />
       </section>
       
-<section className="py-16">
+<section className="py-16 ">
 
     <h2 className="mb-10 text-center text-4xl font-bold">
         Your Livestock, Our Responsibility
@@ -14,7 +15,7 @@ export default function Home() {
 
     <div className="flex flex-col gap-8 md:flex-row">
 
-        <div className="flex-1 rounded-lg border border-zinc-300 p-8 shadow">
+        <div className="flex-1 rounded-lg border border-zinc-800 p-8 shadow">
             <h3 className="mb-4 text-2xl font-semibold">
                 Quick & Accurate Testing
             </h3>
@@ -26,7 +27,7 @@ export default function Home() {
             </p>
         </div>
 
-        <div className="flex-1 rounded-lg border border-zinc-300 p-8 shadow">
+        <div className="flex-1 rounded-lg border border-zinc-800 p-8 shadow">
             <h3 className="mb-4 text-2xl font-semibold">
                 Mobile Testing
             </h3>
@@ -37,7 +38,7 @@ export default function Home() {
             </p>
         </div>
 
-        <div className="flex-1 rounded-lg border border-zinc-300 p-8 shadow">
+        <div className="flex-1 rounded-lg border border-zinc-800 p-8 shadow">
             <h3 className="mb-4 text-2xl font-semibold">
                 Cost Effective
             </h3>
@@ -52,7 +53,7 @@ export default function Home() {
 
 <section>
   <div className="flex flex-col gap-8 md:flex-row">
-    <div className="flex-1 rounded-lg border border-zinc-300 p-8 shadow">
+    <div className=" rounded-lg border border-zinc-800 p-8 shadow md:basis-1/2">
         <h3 className="mb-4 text-2xl font-semibold">
             Our services
         </h3>
@@ -60,7 +61,7 @@ export default function Home() {
         <p>
             We offer Fecal Egg Counts (FEC) for a range of parasites including:
         </p>
-        <ul className="space-y-0.4">
+        <ul className="space-y-1 text-1.5xl">
           <li className="flex items-center gap-3">
             <span className="text-green-600">✓</span>
             <span>Worms</span>
@@ -83,16 +84,14 @@ export default function Home() {
         </ul>
     </div>
 
-        <div className="flex-1 rounded-lg border border-zinc-300 p-8 shadow">
-        <h3 className="mb-4 text-2xl font-semibold">
-            Our services
-        </h3>
-      a photo of an animal or something goes here. make animal fit in visible border. then make border not visible
+    <div className="relative h-64 w-full overflow-hidden rounded-xl lg:h-auto lg:min-h-100  md:basis-1/2">
+      <Image
+      src="/Cow2.jpg"
+      alt="Cow being tested"
+      fill
+      className="object-cover"/>
     </div>
-
   </div>
-
-
 </section>
       
 
